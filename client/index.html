@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+
+</head>
+<body>
+    <div class="topHeading">
+            POWERPLAY &nbsp  RUNS &nbsp PREDICTOR 
+    </div>
+    <div class="fullPage">
+        <div class="fullLeft">
+            <img class="imgLeft">
+            
+        </div>
+        <div class="fullCenter">
+            <div class="center1">
+                <div class="center11">
+                    <div class="selectH1" >
+                        Batting Team
+                    </div>
+                    <input class="T1" id="team1" type="text" value="" readonly placeholder="Choose Batting Team">
+                    <ul class="L1">
+                        <li onclick="click1('1')">Rajasthan Royals</li>
+                        <li onclick="click1('2')">Gujarat Titans</li>
+                        <li onclick="click1('3')">Royal Challengers Bangalore</li>
+                        <li onclick="click1('4')">Lucknow Super Giants</li>
+                        <li onclick="click1('5')">Sunrisers Hyderabad</li>
+                        <li onclick="click1('6')">Punjab Kings</li>
+                        <li onclick="click1('7')">Delhi Capitals</li>
+                        <li onclick="click1('8')">Mumbai Indians</li>
+                        <li onclick="click1('9')">Chennai Super Kings</li>
+                        <li onclick="click1('10')">Kolkata Knight Riders</li>
+                      </ul>
+                </div>
+                <div class="center12">
+                    <div class="selectH2">
+                        Stadium
+                    </div>
+                    <input class="T2" id="stadium1" type="text"readonly value="" readonly placeholder="Choose Stadium" >
+                    <ul class="L2">
+                        <li onclick="click2('1')">Narendra Modi Stadium</li>
+                        <li onclick="click2('2')">MA Chidambaram Stadium</li>
+                        <li onclick="click2('3')">Arun Jaitley Stadium</li>
+                        <li onclick="click2('4')">M.Chinnaswamy Stadium</li>
+                        <li onclick="click2('5')">Wankhede Stadium</li>
+                        <li onclick="click2('6')">Dr DY Patil Sports Academy</li>
+                        <li onclick="click2('7')">Punjab Cricket Association IS Bindra Stadium</li>
+                        <li onclick="click2('8')">Sawai Mansingh Stadium</li>
+                        <li onclick="click2('9')">Rajiv Gandhi International Stadium</li>
+                        <li onclick="click2('10')">Eden Gardens</li>
+                        <li onclick="click2('11')">Maharashtra Cricket Association Stadium</li>
+                        <li onclick="click2('12')">Brabourne Stadium</li>
+                        <li onclick="click2('13')">Himachal Pradesh Cricket Association Stadium</li>
+                        <li onclick="click2('14')">Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium</li>
+
+                        
+                      </ul>
+                    
+                </div>
+                <div class="center13">
+                    <div class="selectH3">
+                        Bowling Team
+                    </div>
+                    <input class="T3" type="text" id="team2" readonly value="" placeholder="Choose Bowling Team" >
+                    <ul class="L3">
+                        <li onclick="click3('1')">Rajasthan Royals</li>
+                        <li onclick="click3('2')">Gujarat Titans</li>
+                        <li onclick="click3('3')">Royal Challengers Bangalore</li>
+                        <li onclick="click3('4')">Lucknow Super Giants</li>
+                        <li onclick="click3('5')">Sunrisers Hyderabad</li>
+                        <li onclick="click3('6')">Punjab Kings</li>
+                        <li onclick="click3('7')">Delhi Capitals</li>
+                        <li onclick="click3('8')">Mumbai Indians</li>
+                        <li onclick="click3('9')">Chennai Super Kings</li>
+                        <li onclick="click3('10')">Kolkata Knight Riders</li>
+                      </ul>
+
+                </div>
+            </div>
+                
+
+            <div class="center2">
+                <div class="center21">
+                    <div class="center211">
+                        Wickets Gone = 
+                    </div>
+                    <div class="center212" id="wks">
+                        0
+                    </div>
+                </div>
+                
+                <div class="center22" >
+                    <button class="center221" onclick="update('1')"> UP </button>
+                    <button class="center222" onclick="update('-1')"> DOWN </button>
+                    
+                    
+                </div>
+                <div class="center23" id="nice">
+                        <button class="center231" onclick="calculate()">
+                            Predict Runs
+                        </button>
+                    
+                    
+                    
+                </div>
+
+
+            </div>
+            <div class="center3" id="predictedRuns">
+                
+            </div>
+            
+        </div>
+        <div class="fullRight">
+            <img class="imgRight">
+
+        </div>
+    </div>
+</body>
+</html>
