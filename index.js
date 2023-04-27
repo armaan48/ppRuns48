@@ -23,6 +23,12 @@ app.post("/result" , function(req, res){
         
          //res.send(data.toString());
     })
+    pyr.stderr.on('data', (data) => {
+    console.error('stderr: ', data.toString('utf8'));
+    })
+    pyr.on('close' , (code)=>{
+        console.log("child process ended: " + code);
+    })
     res.send("[49]");
     console.log("SENDING: back");
     return ;
