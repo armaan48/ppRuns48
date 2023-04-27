@@ -9,6 +9,7 @@ app.use(bd.json());
 
 
 app.post("/result" , function(req, res){
+    res.send("[49]");
     var wk = (req.body.wickets);
     var t1 = (req.body.team1);
     var t2 = (req.body.team2);
