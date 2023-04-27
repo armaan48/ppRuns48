@@ -95,11 +95,9 @@ function update(anything){
 
 
 function calculate(){
-    console.log("calculate\n");
     const cl = new XMLHttpRequest();
     const url = '/result';
     var wk = document.getElementById("wks").innerHTML;
-    console.log("HEEELLLLO:" + document.getElementById("team1").value  + " VS " +  document.getElementById("team2").value)
     var T1 = tn[document.getElementById("team1").value];
     var T2 = tn[document.getElementById("team2").value];
     var stad = sn[document.getElementById("stadium1").value];
@@ -118,6 +116,7 @@ function calculate(){
         
         document.getElementById("predictedRuns").innerHTML = "Predicted Score of " + nt[T1] + " = " + aa;
     }
+    console.log(JSON.stringify(params));
     cl.send(JSON.stringify(params));
     
 }
