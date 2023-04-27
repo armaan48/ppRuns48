@@ -3,6 +3,7 @@ const bd = require("body-parser")
 const {spawn } = require("child_process")
 const app =ex();
 
+
 app.use(ex.static("client"));
 app.use(bd.json());
 
@@ -20,9 +21,10 @@ app.post("/result" , function(req, res){
     
     return ;
 })
-        
-        
-app.listen(3000);
+      
+
+const port = process.env.PORT || 3000;
+app.listen(port , ()=>console.log('Listening:' + port));
 
 
 

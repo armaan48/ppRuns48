@@ -94,7 +94,7 @@ function update(anything){
 function calculate(){
     console.log("calculate\n");
     const cl = new XMLHttpRequest();
-    const url = 'http://localhost:3000/result';
+    const url = '/result';
     var wk = document.getElementById("wks").innerHTML;
     console.log("HEEELLLLO:" + document.getElementById("team1").value  + " VS " +  document.getElementById("team2").value)
     var T1 = tn[document.getElementById("team1").value];
@@ -109,15 +109,11 @@ function calculate(){
         
     }
     cl.onprogress = function(){
-        console.log("doing\n");
     }
     cl.onload = function(){
-        console.log("TYPE:"  + typeof(cl.responseText));
         var aa = cl.responseText.slice( 1  , 3);
         
         document.getElementById("predictedRuns").innerHTML = "Predicted Score of " + nt[T1] + " = " + aa;
-        console.log("ANS:" + aa)
-        console.log("Done\n\n\n\n\n\n");
     }
     cl.send(JSON.stringify(params));
     

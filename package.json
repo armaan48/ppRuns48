@@ -5,13 +5,14 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "SET PORT=8080 && server start"
   },
   "author": "armaan48",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
     "child_process": "^1.0.2",
+    "cross-env": "^7.0.3",
     "express": "^4.18.2",
     "jquery": "^3.6.4",
     "python-shell": "^5.0.0"
