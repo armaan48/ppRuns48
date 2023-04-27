@@ -2,10 +2,9 @@
   "name": "predictor",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "SET PORT=8080 && server start"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "armaan48",
   "license": "ISC",
