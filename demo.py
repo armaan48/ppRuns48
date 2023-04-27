@@ -1,7 +1,7 @@
 import sys
+import os
 import warnings
-  
-
+os.system('python3 -m pip install joblib')
 warnings.filterwarnings("ignore")
 
 def runs(wk , t1 , t2 , std):
