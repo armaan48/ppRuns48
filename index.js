@@ -10,7 +10,7 @@ app.use(bd.json());
 
 app.post("/result" , function(req, res){
     res.send("[49]");
-    return ;
+    
     var wk = (req.body.wickets);
     var t1 = (req.body.team1);
     var t2 = (req.body.team2);
@@ -18,7 +18,10 @@ app.post("/result" , function(req, res){
     let pyr = spawn("python" , ['demo.py' , wk ,t1 , t2 , stad]);
     pyr.stdout.on('data' , (data)=>{
         var c = data.toString();
-         res.send(data.toString());
+        console.log(c);
+        return ;
+        
+         //res.send(data.toString());
     })
     
     return ;
