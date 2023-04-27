@@ -62,7 +62,8 @@ function click1(anything){
     var key = Number(anything);
     console.log("CLICKED\n")
     document.getElementsByClassName("T1")[0].value = String(nt[key]);
-    document.getElementsByClassName("imgLeft")[0].src = String("images/" + nt[key] + ".webp");
+    var ky = nt[key].toLowerCase();
+    document.getElementsByClassName("imgLeft")[0].src = String("images/" + ky + ".webp");
 
 }
 function click2(anything){
@@ -74,7 +75,9 @@ function click2(anything){
 function click3(anything){
     var key = Number(anything);
     document.getElementsByClassName("T3")[0].value = String(nt[key]);
-    document.getElementsByClassName("imgRight")[0].src = String("images/" + nt[key] + ".webp");
+    var ky = nt[key].toLowerCase();
+    
+    document.getElementsByClassName("imgRight")[0].src = String("images/" + ky + ".webp");
 }
 
 function update(anything){
