@@ -25,11 +25,8 @@ def runs(wk , t1 , t2 , std):
    prediction = ((p1 + p2 + p3 + p4)/4)
    return prediction
 
-def main():
-    print("[58]")
-    return
-    print(runs(sys.argv[1] , sys.argv[2] , sys.argv[3] , sys.argv[4]))
+
+  print(runs(sys.argv[1] , sys.argv[2] , sys.argv[3] , sys.argv[4]))
 
 
-if __name__ == '__main__':
-    main()
+
