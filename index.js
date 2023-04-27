@@ -23,7 +23,7 @@ app.post("/result" , function(req, res){
         
          //res.send(data.toString());
     })
-    
+    console.log("SENDING: back");
     return ;
 })
       
