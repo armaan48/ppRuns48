@@ -61,7 +61,7 @@ var ns = {
 function click1(anything){
     var key = Number(anything);
     document.getElementsByClassName("T1")[0].value = String(nt[key]);
-    document.getElementsByClassName("imgLeft")[0].src = String("images/" + nt[key] + ".webp");
+    document.getElementsByClassName("imgLeft")[0].src = String("images/" + nt[key].toLowerCase()+ ".webp");
 
 }
 function click2(anything){
@@ -73,7 +73,7 @@ function click2(anything){
 function click3(anything){
     var key = Number(anything);
     document.getElementsByClassName("T3")[0].value = String(nt[key]);
-    document.getElementsByClassName("imgRight")[0].src = String("images/" + nt[key] + ".webp");
+    document.getElementsByClassName("imgRight")[0].src = String("images/" + nt[key].toLowerCase() + ".webp");
 }
 
 function update(anything){
