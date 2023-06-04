@@ -60,10 +60,8 @@ var ns = {
 
 function click1(anything){
     var key = Number(anything);
-    console.log("CLICKED\n")
     document.getElementsByClassName("T1")[0].value = String(nt[key]);
-    var ky = nt[key].toLowerCase();
-    document.getElementsByClassName("imgLeft")[0].src = String("images/" + ky + ".webp");
+    document.getElementsByClassName("imgLeft")[0].src = String("images/" + nt[key] + ".webp");
 
 }
 function click2(anything){
@@ -75,17 +73,13 @@ function click2(anything){
 function click3(anything){
     var key = Number(anything);
     document.getElementsByClassName("T3")[0].value = String(nt[key]);
-    var ky = nt[key].toLowerCase();
-    
-    document.getElementsByClassName("imgRight")[0].src = String("images/" + ky + ".webp");
+    document.getElementsByClassName("imgRight")[0].src = String("images/" + nt[key] + ".webp");
 }
 
 function update(anything){
-    console.log(Number(document.getElementsByClassName("center212")[0].innerHTML));
     
     var key =Number(document.getElementsByClassName("center212")[0].innerHTML);
     var inc = Number(anything);
-    console.log(key + inc)
     if ((key + inc )>= 0 && (key+inc)<=10){
 
         document.getElementsByClassName("center212")[0].innerHTML = String(key + inc);
@@ -112,11 +106,10 @@ function calculate(){
     cl.onprogress = function(){
     }
     cl.onload = function(){
-        var aa = cl.responseText.slice( 1  , 3);
+        var aa = cl.responseText;
         
         document.getElementById("predictedRuns").innerHTML = "Predicted Score of " + nt[T1] + " = " + aa;
     }
-    console.log(JSON.stringify(params));
     cl.send(JSON.stringify(params));
     
 }
