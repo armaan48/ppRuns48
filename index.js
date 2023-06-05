@@ -4,7 +4,7 @@ const app =ex();
 const fs = require('fs');
 
 
-app.use(ex.static("client"));
+app.use(ex.static("./client"));
 app.use(bd.json());
 function predictLinearRegression(inputData, coef, intercept) {
     // Ensure the inputData is an array
